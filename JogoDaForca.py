@@ -3,7 +3,7 @@ import time
 
 reiniciar_tela()
 menu_inicial()
-time.sleep(12)
+time.sleep(15)
 reiniciar_tela()
 
 desafiante = str(input('Digite o nome do DESAFIANTE: '))
@@ -47,15 +47,15 @@ while True:
 Selecione uma opção: ''')
         if escolher_dica == "1":
             print('\nDica 1: ', dica1)
-            time.sleep(3)
+            time.sleep(5)
             reiniciar_tela()
         elif escolher_dica == '2':
             print('\nDica 2: ', dica2)
-            time.sleep(3)
+            time.sleep(5)
             reiniciar_tela()
         elif escolher_dica == '3':
             print('\nDica 3: ', dica3)
-            time.sleep(3)
+            time.sleep(5)
             reiniciar_tela()
         else:
             print("Opção inválida!\n")
@@ -78,12 +78,12 @@ Selecione uma opção: ''')
         print("Essa letra não está na palavra!\n")
 
     if erros >= 6:
-        print('''Voce perdeu!!!!!
+        print('''Voce perdeu!!!!!\n
     |==========
-    |    |
-    |    0
-    |   /|\ 
-    |   / \ 
+    |    |     Essa vida foi perdida por sua causa!
+    |    0     1 minuto de silêncio em respeito a essa vida perdida...
+    |   /|\    Bora matar mais um?  :D
+    |   / \    
     ===========
     ''')
         break
