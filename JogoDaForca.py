@@ -7,13 +7,13 @@ time.sleep(12)
 reiniciar_tela()
 
 desafiante = str(input('Digite o nome do DESAFIANTE: '))
-desafiado = str(input('Digite o nome do DESAFIADO: '))
+desafiado = str(input('\nDigite o nome do DESAFIADO: '))
 
 reiniciar_tela()
 
-print('As seguintes informações devem ser completadas pelo DESAFIANTE: ')
-palavra_chave = str(input('Digite a palavra que você queira inserir na forca: ')).lower().strip()
-dica1 = input('Digite a primeira dica para seu adversário: ')
+print('\nAs seguintes informações devem ser completadas pelo DESAFIANTE: ')
+palavra_chave = str(input('\nDigite a palavra que você queira inserir na forca: ')).lower().strip()
+dica1 = input('\nDigite a primeira dica para seu adversário: ')
 dica2 = input('\nDigite a segunda dica para seu adversário: ')
 dica3 = input('\nDigite a terceira dica dica para seu adversário: ')
 
@@ -36,7 +36,7 @@ while True:
         ganhou()
         break
     print('''\nDigite "0" para usar as dicas''')
-    tentativa = input("\nDigite uma letra:").lower().strip()
+    tentativa = input("\nDigite uma letra: ").lower().strip()
     reiniciar_tela()
     if tentativa == '0':
         escolher_dica = input('''
