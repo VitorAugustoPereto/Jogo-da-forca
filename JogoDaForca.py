@@ -3,7 +3,7 @@ import time
 
 reiniciar_tela()
 menu_inicial()
-time.sleep(15)
+time.sleep(12)
 reiniciar_tela()
 
 desafiante = str(input('Digite o nome do DESAFIANTE: '))
