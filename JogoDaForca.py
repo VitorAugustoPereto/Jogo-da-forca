@@ -78,7 +78,7 @@ Selecione uma opção: ''')
         print("Essa letra não está na palavra!\n")
 
     if erros >= 6:
-        print('''Voce perdeu!!!!!\n
+        print('''Game Over !!!\n
     |==========
     |    |     Essa vida foi perdida por sua causa!
     |    0     1 minuto de silêncio em respeito a essa vítima...
