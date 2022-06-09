@@ -81,8 +81,8 @@ Selecione uma opção: ''')
         print('''Voce perdeu!!!!!\n
     |==========
     |    |     Essa vida foi perdida por sua causa!
-    |    0     1 minuto de silêncio em respeito a essa vida perdida...
-    |   /|\    Bora matar mais um?  :D
+    |    0     1 minuto de silêncio em respeito a essa vítima...
+    |   /|\    Partiu matar mais um?  :D
     |   / \    
     ===========
     ''')
