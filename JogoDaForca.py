@@ -12,11 +12,15 @@ desafiado = str(input('\nDigite o nome do DESAFIADO: '))
 reiniciar_tela()
 
 print('\nAs seguintes informações devem ser completadas pelo DESAFIANTE: ')
-palavra_chave = str(input('\nDigite a palavra que você queira inserir na forca: ')).lower().strip()
-dica1 = input('\nDigite a primeira dica para seu adversário: ')
-dica2 = input('\nDigite a segunda dica para seu adversário: ')
-dica3 = input('\nDigite a terceira dica dica para seu adversário: ')
-
+while True:
+   palavra_chave = str(input('\nDigite a palavra que você queira inserir na forca: ')).lower().strip()
+   dica1 = input('\nDigite a primeira dica para seu adversário: ')
+   dica2 = input('\nDigite a segunda dica para seu adversário: ')
+   dica3 = input('\nDigite a terceira dica dica para seu adversário: ')
+   print('Precione ENTER para continuar, ou 0 para reiniciar o processo novamente')
+   op = input()
+   if op != '0':
+   break
 letras_digitadas = []
 erros = 0
 letras_certas = []
@@ -117,7 +121,7 @@ else:
     perdeu()
     time.sleep(3)
     reiniciar_tela()
-registro = open("registro.txt", "w")
+registro = open("registro.txt", "a")
 registro.write("A Palavra chave era: %s \n" % palavra_chave)
 
 if key == palavra_chave:
